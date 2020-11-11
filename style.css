@@ -24,6 +24,7 @@ h4 {
 }
 
 p {
+    font-family: 'Lato', 'san-serif';
     font-size: 20px;
 }
 
@@ -68,8 +69,8 @@ header {
     }
 
     .logo img {
-        height: 86px;
-        width: 86px;
+        height: 60px;
+        width: 50px;
     }
 
     .burger div {
@@ -88,7 +89,7 @@ header {
 /* landing page */
 .landing {
     height: 400px;
-    padding: 50px 100px;
+    padding: 50px 10px;
     text-align: center;
     box-sizing: border-box;
     margin-bottom: 0;
@@ -326,6 +327,27 @@ header {
 }
 
 
+/* meet our people */
+.our-people {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 100%;
+}
+    .people {
+        text-align: center;
+        max-width: 24%;
+        max-height: 400px;
+    }
+        .people img {
+            width: 99%;
+            height: 70%;
+        }
+
+        .people p, .people h3 {
+            margin: 0;
+        }
+
 /* footer */
 footer {
     text-align: left;
@@ -367,3 +389,145 @@ footer {
             footer a:hover {
                 font-size: 25px;
             }
+
+
+
+/* media queries for landing page */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 98%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+
+    .landing {
+        height: 300px;
+        padding: 20px 10px;
+        align-items: center;
+    }
+        .landing h1, .landing p {
+            width: 100%;
+        }
+        .work-land-head, .work-land p {
+            max-width: 100% !important;
+        }
+        .landing h1 {
+            margin: 20px 0;
+        }
+
+        .work-land p {
+            margin-bottom: 0;
+        }
+
+    /* pages */
+    .pages {
+        flex-direction: column;
+    }
+        .page-img {
+            max-width: 98%;
+        }
+
+        .picture-border-left, .picture-border-right {
+            border-radius: 0;
+        }
+
+        .page-name {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        .name-right {
+            text-align: left;
+            -webkit-order: 1;
+            order: 1;
+        }
+
+        .page-img {
+            -webkit-order: 2;
+            order: 2;
+        }
+
+        .fa-arrow-right, .fa-arrow-left {
+            display: none;
+        }
+
+
+    /* services page */
+    .services {
+        flex-direction: column;
+    }
+        .service {
+            margin: 20px auto;
+        }
+
+
+    /* creative expertise */
+    .expertise {
+        max-width: 95%;
+    }
+        .expertise ul {
+            max-width: 99%;
+        }
+        .expertise-list li {
+            list-style: square;
+            font-size: 1.5rem;
+        }
+
+    /* creative process page */
+    .creative-flex, .creative-items {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .creative-flex h1, .creative-flex p {
+        max-width: 99%;
+    }
+
+    .creative-flex h1 {
+        font-size: 2rem;
+    }
+
+    .creative-item {
+        max-width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    /* create magic */
+    .create-magic-work-page {
+        flex-direction: column;
+    }
+
+    .div-1, .div-2 {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    /* footer */
+    footer {
+        padding: 20px 20px;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .footer-card-1 {
+        line-height: normal;
+        margin: 20px 0;
+    }
+
+}
