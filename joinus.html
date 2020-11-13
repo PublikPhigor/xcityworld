@@ -8,40 +8,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- header -->
-    <header class="header">
-        <div class="logo-burger">
+    <header class="header contact-header">
+        <div class="logo-burger contact-logo-burger">
             
             <div class="logo">
                 <img src="img/logo.png" alt="Xcityworld">
             </div>
 
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+            <a href="index.html">
+                <div class="burger contact-burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </a>
         </div>
 
-        <nav class="nav">
-            <div class="nav-box">
-                <div class="nav-bar small-links">
-                    <ul>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">NISIR.org</a></li>
-                        <li><a href="#">Invest crypto pro</a></li>
-                        <li><a href="#">I am one Nigeria</a></li>
-                        <li><a href="#">Chat testers</a></li>
-                        <li><a href="#">Virtual jobs</a></li>
-                    </ul>
+        <nav class="nav contact-nav">
+            <div class="contact-us-cont">
+                <div class="hello">
+                    <h2>Hello,</h2>
+                    <p>Fill the form or email us</p>
+                    <p>hello@x-city.com</p>
                 </div>
-                <div class="nav-bar big-links">
-                    <ul>
-                        <li><a href="about.html" class="main-nav-link">About Us</a></li>
-                        <li><a href="works.html" class="main-nav-link">Our Work</a></li>
-                        <li><a href="contact.html" class="main-nav-link">Contact Us</a></li>
-                        <li><a href="blog.html" class="main-nav-link">Our blog</a></li>
-                    </ul>
+
+                <div class="contact-form">
+                    <form action="POST">
+                        <div class="split-input">
+                            <input type="text" placeholder="Name" class="input-half">
+                            <input type="email" placeholder="Email" class="input-half">
+                        </div>
+                        <div class="split-input">
+                            <input type="text" placeholder="Phone Number" class="input-half">
+                            <input type="text" placeholder="Position" class="input-half">
+                        </div>
+                        <input type="email" placeholder="Attach your CV, Portfolio, Resume here">
+                        <input type="text" placeholder="Briefly tell us about yourself">
+                        <input type="submit" value="Send">
+                    </form>
                 </div>
             </div>
             <div class="nav-footer">
@@ -56,11 +60,11 @@
 
     <div class="container">
         <!-- landing page -->
-        <section class="landing work-land">  
-            <h1 class="work-land-head">
-                Great work, done together.
+        <section class="landing">  
+            <h1>
+                We design and build digital products and experiences
             </h1>
-            <p>We have worked for brands across various industries over the years and here are some of our featured projects..</p>
+            <p>We build websites and apps with innovative solutions that meets business goals.</p>
         </section>
 
         <!-- teapotng -->
@@ -128,55 +132,30 @@
             </div>
         </section>
 
-        <!-- our expertise -->
-        <section class="expertise">
-            <div>
-                <h1>Our expertise</h1>
-                <p>The skills and services we render.</p>
-            </div>
-            <ul class="expertise-list">
-                <li>Mobile App Development</li>
-                <li>Branding</li>
-                <li>Search Engine Optimization</li>
-                <li>Design</li>
-                <li>Training</li>
-                <li>Website Design and Development</li>
-            </ul>
-        </section>
     </div> <!-- container-->
-     <!-- creative process -->
-     <section class="creative-process">
-        <div class="creative-flex">
-            <h1>Our Creative Process</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. bore et dolore magna aliquyam erat, sed</p>
-        </div>
-
-        <div class="creative-items">
-            <h5 class="creative-item">Client discovery meeting</h5>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <h5 class="creative-item">Survey and strategy</h5>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <h5 class="creative-item">Development</h5>
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <h5 class="creative-item">Handoff/Deployment</h5>
-        </div>
-    </section>
 
     <!-- create magic page -->
-    <section class="create-magic-work-page">
-        <div class="div-1">
-            <h2>Think we can create magic together?</h2>
-            <a href="#" class="magic-btn">Let's do it</a>
-        </div>
+    <section class="create-magic">
+        <h2>Think we can create magic together?</h2>
+        <a href="#" class="magic-btn">Let's do it</a>
+    </section>
 
-        <div class="div-2">
-            <h5 class="testimony-header">Testimonials</h5>
-            <div class="testimony">
-                <div class="testimony-img">.</div>
-                <h5>Aminu Idris</h5>
-                <p class="testimony-p">CEO, virtual jobs</p>
+    <!-- services page -->
+    <section class="service-page">
+        <h1>Our Services.</h1>
+        <div class="services">
+            <div class="service">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <p class="service-tag">Software Development</p>
             </div>
-            <p class="testimony-quote">“ Working with x-city has been a great experience for myself and my brand, great individuals with the required skills set to help a brand at any level”</p>
+            <div class="service">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <p class="service-tag">Branding</p>
+            </div>
+            <div class="service">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <p class="service-tag">Training</p>
+            </div>
         </div>
     </section>
 
