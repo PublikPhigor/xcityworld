@@ -35,10 +35,3 @@ const navSlide = () => {
 
 navSlide();
 
-
-// function darkBg() {
-//     const header = document.querySelector('.header');
-//     document.getElementsByClassName('header').setAttribute("class", "header-black");
-// }
-
-// darkBg();
