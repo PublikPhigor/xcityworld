@@ -30,6 +30,10 @@ p {
     font-weight: 500;
 }
 
+.underline {
+    text-decoration: underline  ;
+}
+
 #backtop {
     color: #FFF;
     background-color: #000;
@@ -119,7 +123,7 @@ header {
 
     /* hide navigation by default */
     nav {
-        transform: translateX(105%);
+        display: none;
         transition: transform 0s ease-in;
         color: #FFF;
         padding: 20px 100px;
@@ -168,7 +172,7 @@ header {
 
     /* contact us page navigation visible by default */
     .contact-nav {
-        transform: translate(0%);
+        display: block;
     }
 
     .contact-header {
@@ -204,7 +208,7 @@ header {
 
     /* JS toggle class to make navbar visible */
     .nav-active {
-        transform: translateX(0%);
+        display: block;
     }
 
     .toggle .line1 {
@@ -291,6 +295,7 @@ header {
     text-align: center;
     box-sizing: border-box;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 /* landing page for work page */
@@ -299,6 +304,7 @@ header {
     background-color: #000;
     max-width: 90%;
     margin: auto;
+    margin-top: 20px;
 }
     .work-land-head {
         max-width: 50%;
@@ -340,9 +346,11 @@ header {
             }
     .page-name {
         width: 35%;
+        margin-bottom: 0;
     }
         /* align text to left and right so as to set with border of the container */
         .name-left {
+            margin-bottom: 0;
             text-align: left;
             
         }
@@ -780,6 +788,7 @@ header {
                 .blog-card h6 {
                     margin: 10px auto;
                     text-align: left;
+                    font-weight: 600;
                 }
 
                 .blog-card p {
@@ -795,11 +804,13 @@ header {
                 }
 
                 .blog-author {
+                    text-align: left;
                     margin: 10px auto;
                     display: flex;
                 }
                     .blog-author p {
-                        margin-right: 20px;
+                        text-align: left;
+                        margin-right: 15px;
                         display: inline;
                     }
                     .blog-author i {
@@ -1057,6 +1068,7 @@ footer {
         flex-direction: column;
         margin-top: 0;
         padding: 0;
+        justify-content: space-evenly;
     }
         .page-img {
             max-width: 98%;
@@ -1069,11 +1081,15 @@ footer {
 
         .page-name {
             width: 50%;
-            margin-bottom: 10px;
+            margin-bottom: 0 !important;
         }
             .page-name h3, .page-name p {
                 margin: 0;
             }
+
+        .page-picture {
+            margin-top: 0;
+        }
 
         .name-right {
             text-align: left;
@@ -1259,12 +1275,15 @@ footer {
             }
 
             .blog-author p {
-                margin-right: 10px;
+                text-align: left;
+                margin-right: 2px;
                 font-size: .6rem !important;
             }
                 .blog-author:last-child {
                     margin-right: 0;
                 }
+
+      
 
         .main {
             -webkit-order: 0;
