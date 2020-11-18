@@ -36,21 +36,16 @@ const navSlide = () => {
 navSlide();
 
 const showSlide = () => {
-    const clickSlide = document.querySelector('.people');
     const slide = document.querySelector('.slideshow-container');
+    const viewProlile = document.querySelector('.view-profile-box');
     const darkCont = document.querySelector('.slide-main-cont');
     const slideBurger = document.querySelector('.slide-burger');
-    const darkBody = document.querySelector('body');
+    const darkBody = document.querySelector('.body');
 
-    clickSlide.addEventListener('click',()=>{
+    viewProlile.addEventListener('click',()=>{
         //display slide
         slide.classList.toggle('slide-active');
 
-        //dark container
-        darkCont.classList.toggle('container-dark');
-
-        //dark body
-        darkBody.classList.toggle('dark-body');
 
         slideBurger.addEventListener('click',()=>{
             //close slide

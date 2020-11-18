@@ -127,7 +127,7 @@ header {
         transition: transform 0s ease-in;
         color: #FFF;
         padding: 20px 100px;
-        height: 90vh;
+        height: 100vh;
         background-color: #000;
         position: relative;
         z-index: 10000;
@@ -223,6 +223,11 @@ header {
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
         background-color: #FFF;
+    }
+
+    /* to remove body display on active navbar */
+    .remove-body {
+        display: none;
     }
 
 /* contact us navigation */
@@ -563,41 +568,68 @@ header {
 .our-people {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 10px auto;
     width: 100%;
+    overflow: hidden;
 }
-    .people {
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        width: 33%;
-        height: 400px;
-        box-sizing: border-box;
-        cursor: pointer;
-        padding: 0;
+    .down-3 {
+        max-width: 32%;
     }
-        .people p, .people h3 {
-            text-align: right;
-            padding: 5px 5px;
+
+    .img-team-container {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        border-radius: 3px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, .1);
+    }
+        .mother {
+            position: relative;
+            margin: 0 auto;
         }
-        .people h3 {
+        .team-name {
+            position: absolute;
+            display: inline-block;
+            margin-top: -60px;
+            padding: 8px;
             background-color: #E77F11;
-            color: #FFF;
-            font-size: 1rem;
-            max-width: 45%;
-            margin-left: 65% !important;
-            margin: 0;
-            margin-top: 100%;
+            margin-left: 7%;
+            right: 0%;
+            color: #fff;
+            box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
         }
-        .people p {
-            max-width: 30%;
-            margin: 0;
-            margin-left: 70%;
-            background-color: #FFF;
-            color: #000;
-            font-size: 1rem;
+
+        .team-post {
+            display: inline-block;
+            margin-top: -30px;
+            padding: 8px;
+            background-color: #fff;
+            margin-left: 50%;
+            position: absolute;
+            right: 0;
+            color: #E77F11;
+            box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
         }
+        
+
+        .view-profile-box {
+            text-align: center;
+            width: 40%;
+            right: 0;
+            margin-left: 60%;
+            padding: 10px;
+            border: 1px solid #E77F11;
+            color: #E77F11;
+            position: relative;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+            .view-profile-box:hover {
+                background-color: #E77F11;
+                color: #FFF;
+            }
 
     /* popup page */
     .slide-main-cont {
@@ -637,7 +669,7 @@ header {
     }
         /* JS function to make slide popup */
         .slide-active {
-            display: block;
+            display: contents;
         }
         .slide-inactive {
             display: none;
@@ -975,7 +1007,7 @@ footer {
     nav {
         margin-top: -20px;
         padding: 20px;
-        height: auto;
+        height: 100vh;
     }
 
     .nav-box {

@@ -47,6 +47,10 @@
     } 
 }
 
+.dontslideanim {
+    visibility: visible;
+}
+
 
 /*-------- Generic styles for the page ------------------*/
 
