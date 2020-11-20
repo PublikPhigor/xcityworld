@@ -93,18 +93,30 @@ header {
     padding: 10px 0;
     max-height: 8vh;
 }
+    header.inactive {
+        display: none;
+    }
 
     .logo-burger {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 5%;
-        position: relative;
-        z-index: 10001;
+        padding: 10px 5%;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        background-color: #FFF;
+        top: 0;
     }
-        .logo-burger-pad {
-            padding: 0 100px;
-        }
+
+    .nav-logo-burger {
+        background: none;
+        z-index: 10000;
+        padding: 20px 0 !important;
+        width: 85%;
+        margin: 0 auto;
+    }
+
 
     .logo img {
         height: 60px;
@@ -120,6 +132,11 @@ header {
         height: 2px;
         background-color: #000;
     }
+    .nav-burger {
+        font-size: 3rem;
+        font-weight: 300;
+        color: #FFF;
+    }
         /* changes burger color to white onclick */
         .burger-white {
             background-color: #FFF;
@@ -130,12 +147,14 @@ header {
         display: none;
         transition: transform 0s ease-in;
         color: #FFF;
-        padding: 20px 100px;
+        padding: 12vh 100px;
         height: 100vh;
         background-color: #000;
-        position: relative;
+        position: fixed;
         z-index: 10000;
-        margin-top: -25px;
+        top: 0;
+        width: 100%;
+        height: 100vh;
     }
         nav a {
             color: #FFF;
@@ -177,9 +196,10 @@ header {
     /* contact us page navigation visible by default */
     .contact-nav {
         display: block;
+        width: 100vw;
     }
 
-    .contact-header {
+    /* .contact-header {
         background-color: #000;
     }
         .contact-header a {
@@ -188,7 +208,7 @@ header {
         }
     .contact-logo-burger {
         padding: 0 100px;
-    }
+    } */
 
     .contact-burger div{
         background-color: #FFF;
@@ -213,6 +233,11 @@ header {
     /* JS toggle class to make navbar visible */
     .nav-active {
         display: block;
+        scrollbar-width: 0;
+    }
+
+    .nav-inactive {
+        display: none;
     }
 
     .toggle .line1 {
@@ -285,6 +310,10 @@ header {
         }
         .contact-form input[type=submit]:hover {
             font-weight: 700;
+        }
+
+        input:focus, input:active {
+            color: #FFF;
         }
         
     /* join us page */
@@ -828,8 +857,33 @@ header {
             flex-direction: column;
             justify-content: space-between;
         }
+            .flex {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px auto;
+            }
+            .blog-card-landing {
+                width: 30%;
+            }
+            .read-more-btn {
+                text-decoration: underline;
+                font-weight: 600;
+                font-style: italic;
+            }
+                .read-more-btn:hover {
+                    color: #E77F11;
+                }
+
+            .recent-post-title {
+                font-size: 1.5rem;
+            }
+                .recent-post-title:hover {
+                    color: #E77F11;
+                }
+
+            
             .blog-card {
-                padding: 2% 10px;
+                padding: 0 10px;
                 width: 100%;
                 max-width: 100%;
                 height: 24%;
@@ -851,10 +905,12 @@ header {
                     font-size: .8rem !important;
                     margin: 0;
                 }
+                .author-name:hover {
+                    color: #E77F11;
+                }
 
                 .card-img {
-                    width: 50%;
-                    max-width: 50%;
+                    width: 100%;
                     margin: 5px 0;
                 }
 
@@ -1003,15 +1059,15 @@ footer {
     }
 
     h1 {
-        font-size: 40px;
-    }
-    
-    h2 {
         font-size: 35px;
     }
     
+    h2 {
+        font-size: 30px;
+    }
+    
     h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     h4 {
@@ -1024,12 +1080,16 @@ footer {
     }
 
     .logo-burger {
-        padding: 0px 5px;
+        padding: 0px 20px;
+    }
+
+    .nav-logo-burger {
+        width: 90%;
     }
 
     nav {
         margin-top: -20px;
-        padding: 20px;
+        padding: 15vh 5%;
         height: 100vh;
     }
 
@@ -1259,8 +1319,10 @@ footer {
 
     /* popup page */
     .modal {
-        width: 100%;
+        width: 90%;
         height: auto !important;
+        position: absolute;
+        top: 250vh;
     }
         .slide-burger {
             left: 82%;

@@ -1,5 +1,6 @@
 const navSlide = () => {
     const burger = document.querySelector('.burger');
+    const closeNav = document.querySelector('.nav-burger');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav-links li');
     const header = document.querySelector('.header');
@@ -9,7 +10,7 @@ const navSlide = () => {
 
     burger.addEventListener('click',()=>{
         //toggle nav
-        nav.classList.toggle('nav-active');  
+        nav.classList.add('nav-active');  
         
         //animate links
         navLinks.forEach((link, index)=>{
@@ -20,14 +21,19 @@ const navSlide = () => {
             }
         })
 
-        //burger toggle
-        burger.classList.toggle('toggle');
+        closeNav.addEventListener('click', () => {
+            nav.classList.remove('nav-active');
+            
+        });
 
-        //header toggle
-        header.classList.toggle('header-black');
+        // //burger toggle
+        // burger.classList.toggle('toggle');
+
+        // //header toggle
+        // header.classList.toggle('header-black');
         
-        //add padding to header
-        logoPad.classList.toggle('logo-burger-pad');
+        // //add padding to header
+        // logoPad.classList.toggle('logo-burger-pad');
 
     });
 
