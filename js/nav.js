@@ -36,24 +36,22 @@ const navSlide = () => {
 navSlide();
 
 const showSlide = () => {
-    const slide = document.querySelector('.slideshow-container');
-    const viewProlile = document.querySelector('.view-profile-box');
-    const darkCont = document.querySelector('.slide-main-cont');
-    const slideBurger = document.querySelector('.slide-burger');
-    const darkBody = document.querySelector('.body');
+    const modal = document.querySelector('.modal');
+    const openButton = document.querySelector('.open-button-1');
+    const closeButton = document.querySelector('.close-btn');
+    const overlay = document.querySelector('#overlay');
 
-    viewProlile.addEventListener('click',()=>{
+    openButton.addEventListener('click',()=>{
         //display slide
-        slide.classList.toggle('slide-active');
+        modal.classList.add('active');
+        overlay.classList.add('active');
 
 
-        slideBurger.addEventListener('click',()=>{
+        closeButton.addEventListener('click',()=>{
             //close slide
-            slide.classList.toggle('slide-inactive');
-            darkCont.classList.toggle('container-dark-inactive');
-
-            //dark body
-            darkBody.classList.toggle('white-body');
+            modal.classList.remove('active');
+            overlay.classList.remove('active');
+            
         });
 
     });

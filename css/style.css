@@ -30,6 +30,10 @@ p {
     font-weight: 500;
 }
 
+section {
+    padding: 0;
+}
+
 .underline {
     text-decoration: underline  ;
 }
@@ -310,6 +314,7 @@ header {
     max-width: 90%;
     margin: auto;
     margin-top: 20px;
+    padding: 5% 0;
 }
     .work-land-head {
         max-width: 50%;
@@ -568,13 +573,19 @@ header {
 .our-people {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10px auto;
     width: 100%;
     overflow: hidden;
 }
     .down-3 {
-        max-width: 32%;
+        background-color: #FFF;
+        max-width: 31%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 5px;
+        border-radius: 3px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, .2);
     }
 
     .img-team-container {
@@ -591,7 +602,7 @@ header {
         .team-name {
             position: absolute;
             display: inline-block;
-            margin-top: -60px;
+            margin-top: -70px;
             padding: 8px;
             background-color: #E77F11;
             margin-left: 7%;
@@ -602,7 +613,7 @@ header {
 
         .team-post {
             display: inline-block;
-            margin-top: -30px;
+            margin-top: -35px;
             padding: 8px;
             background-color: #fff;
             margin-left: 50%;
@@ -615,14 +626,13 @@ header {
 
         .view-profile-box {
             text-align: center;
-            width: 40%;
+            width: 70%;
             right: 0;
-            margin-left: 60%;
-            padding: 10px;
+            margin: 20px auto;
+            padding: 10px 30px;
             border: 1px solid #E77F11;
             color: #E77F11;
             position: relative;
-            margin-top: 10px;
             cursor: pointer;
             border-radius: 3px;
         }
@@ -632,7 +642,7 @@ header {
             }
 
     /* popup page */
-    .slide-main-cont {
+    /* .slide-main-cont {
         width: 100%;
         height: 100vh;
         margin: 0 auto;
@@ -643,36 +653,54 @@ header {
         text-align: center;
     }
         /* JS function to make container dark onclick of the popup in about us page */
-        .container-dark {
+        /* .container-dark {
             display: block;
         }
         .container-dark-inactive {
             display: none;
         }
 
-        /* JS - to make body color change to dark or white */
+        /* JS - to make body color change to dark or white 
         .dark-body {
             background-color:rgba(0, 0, 0, .9); 
         }
         .white-body {
             background-color: #FFF;
-        }
-    .slideshow-container {
+        }  */
+
+    .modal {
         background-color: #000;
         color: #FFF;
-        width: 100%;
+        width: 80%;
         height: 80vh;
         margin: 0 auto;
         border-radius: 20px;
-        position: relative;
-        display: none;
+        position: fixed;
+        transform: translate(-50%, -50%) scale(0);
+        top: 50%;
+        left: 50%;
+        z-index: 100000;
+    }
+
+    #overlay {
+        position: fixed;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+        pointer-events: none;
+        z-index: 10000;
+    }
+    
+    #overlay.active {
+        pointer-events: all;
+        opacity: 1;
     }
         /* JS function to make slide popup */
-        .slide-active {
-            display: contents;
-        }
-        .slide-inactive {
-            display: none;
+        .modal.active {
+            transform: translate(-50%, -50%) scale(1);
         }
 
         .slideshow-container a {
@@ -680,28 +708,23 @@ header {
             color: #FFF;
         }
         .slide-burger {
-            cursor: pointer;
             position: relative;
             top: 10px;
-            left: 90%;
+            left: 92.5%;
             width: 30px;
             height: 30px;
         }
-
-        .slide-burger div {
-            background-color: #FFF;
-            width: 25px;
-            height: 2px;
-            margin: 15px;
-        }
-
-            .slide-line1 {
-                transform: rotate(-45deg) translate(-5px, 6px);
+            .close-btn {
+                cursor: pointer;
+                font-size: 1.5rem;
+                color: #FFF;
+                background: none;
+                border: none;
+                outline: none;
             }
-
-            .slide-line2 {
-                transform: rotate(45deg) translate(-5px, -6px);
-            }
+                .close-btn:hover {
+                    transform: rotate(60deg);
+                }
 
 
         .mySlides {
@@ -752,7 +775,7 @@ header {
                     margin: 0;
                 }
     /* Next & previous buttons */
-    .prev, .next {
+    /* .prev, .next {
         cursor: pointer;
         position: relative;
         top: -40%;
@@ -766,7 +789,7 @@ header {
     }
     
     /* Position the "next button" to the right */
-    .next {
+    /* .next {
         left: 91%;
         border-radius: 3px 0 0 3px;
     }
@@ -774,7 +797,7 @@ header {
         .prev:hover, .next:hover {
             background-color: rgba(204, 204, 204, 0.527);
         }
-  
+   */ 
 
 /* BLOG */
 .blog-header {
@@ -1156,8 +1179,7 @@ footer {
             max-width: 99%;
         }
         .expertise-list li {
-            list-style: square;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
 
     /* creative process page */
@@ -1229,17 +1251,16 @@ footer {
     }
 
     /* meet our people */
-    .people {
-        width: 350px;
-        margin: 10px auto;
+    .down-3 {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
 
     /* popup page */
-    .slideshow-container {
+    .modal {
         width: 100%;
         height: auto !important;
-        top: 0;
     }
         .slide-burger {
             left: 82%;
