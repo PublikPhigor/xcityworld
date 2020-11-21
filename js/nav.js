@@ -3,8 +3,8 @@ const navSlide = () => {
     const closeNav = document.querySelector('.nav-burger');
     const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav-links li');
-    const header = document.querySelector('.header');
-    const logoPad = document.querySelector('.logo-burger');
+    // const header = document.querySelector('.header');
+    // const logoPad = document.querySelector('.logo-burger');
 
     
 
@@ -23,17 +23,8 @@ const navSlide = () => {
 
         closeNav.addEventListener('click', () => {
             nav.classList.remove('nav-active');
-            
+
         });
-
-        // //burger toggle
-        // burger.classList.toggle('toggle');
-
-        // //header toggle
-        // header.classList.toggle('header-black');
-        
-        // //add padding to header
-        // logoPad.classList.toggle('logo-burger-pad');
 
     });
 
@@ -66,3 +57,18 @@ const showSlide = () => {
 
 showSlide();
 
+//make the header fixed after scroll of 100px
+const myHeader = document.querySelector('.logo-burger');
+window.onscroll = function() {
+    fixedHeader();
+};
+
+function fixedHeader() {
+    if (document.body.scrollTop > 100) {
+        myHeader.classList.add('fixed-header');
+    } else {
+        myHeader.classList.remove('fixed-header');
+    }
+};
+
+//the code above does not work and I don't know whyyy.

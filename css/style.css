@@ -102,18 +102,20 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 10px 5%;
-        position: fixed;
-        z-index: 1000;
-        width: 100%;
         background-color: #FFF;
         top: 0;
     }
+        .fixed-header {
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+        }
 
     .nav-logo-burger {
         background: none;
         z-index: 10000;
         padding: 20px 0 !important;
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -147,7 +149,7 @@ header {
         display: none;
         transition: transform 0s ease-in;
         color: #FFF;
-        padding: 12vh 100px;
+        padding: 2vh 100px;
         height: 100vh;
         background-color: #000;
         position: fixed;
@@ -1089,7 +1091,7 @@ footer {
 
     nav {
         margin-top: -20px;
-        padding: 15vh 5%;
+        padding: 20px 5%;
         height: 100vh;
     }
 
