@@ -104,18 +104,21 @@ header {
         padding: 10px 5%;
         background-color: #FFF;
         top: 0;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
     }
-        .fixed-header {
+        /* .fixed-header {
             position: fixed;
             z-index: 1000;
             width: 100%;
-        }
+        } */
 
     .nav-logo-burger {
         background: none;
         z-index: 10000;
         padding: 20px 0 !important;
-        width: 100%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -149,7 +152,7 @@ header {
         display: none;
         transition: transform 0s ease-in;
         color: #FFF;
-        padding: 2vh 100px;
+        padding: 12vh 100px;
         height: 100vh;
         background-color: #000;
         position: fixed;
@@ -199,6 +202,9 @@ header {
     .contact-nav {
         display: block;
         width: 100vw;
+        height: 220vh;
+        padding: 0 7vw;
+        padding-top: 15vh;
     }
 
     /* .contact-header {
@@ -279,6 +285,7 @@ header {
 
     form {
         width: 100%;
+        margin: 0 auto;
     }
     
     .contact-form {
@@ -866,6 +873,10 @@ header {
             }
             .blog-card-landing {
                 width: 30%;
+                background-color: #F9F9F9;
+                height: auto;
+                max-height: 400px;
+                margin: 10px auto;
             }
             .read-more-btn {
                 text-decoration: underline;
@@ -896,13 +907,13 @@ header {
                 margin: 0 auto;
                 text-align: center;
             }
-                .blog-card h6 {
+                .blog-card h6, .blog-card-landing h6 {
                     margin: 10px auto;
                     text-align: left;
                     font-weight: 600;
                 }
 
-                .blog-card p {
+                .blog-card p, .blog-card-landing p {
                     text-align: justify;
                     font-size: .8rem !important;
                     margin: 0;
@@ -920,6 +931,8 @@ header {
                     text-align: left;
                     margin: 10px auto;
                     display: flex;
+                    align-items: center;
+                    line-height: 10px;
                 }
                     .blog-author p {
                         text-align: left;
@@ -1078,7 +1091,7 @@ footer {
     
     /* navigation */
     header {
-        margin-bottom: 0;
+        margin-bottom: 5vh;
     }
 
     .logo-burger {
@@ -1087,12 +1100,18 @@ footer {
 
     .nav-logo-burger {
         width: 90%;
+        margin: 0 auto;
     }
 
     nav {
         margin-top: -20px;
-        padding: 20px 5%;
+        padding: 15vh 5%;
         height: 100vh;
+    }
+
+    .contact-nav {
+        padding: 0 1vw;
+        padding-top: 15vh;
     }
 
     .nav-box {
@@ -1134,15 +1153,18 @@ footer {
         }
 
         .contact-form {
-            max-width: 95%;
+            max-width: 100%;   
         }
+            form {
+                max-width: 90%;
+            }
             .contact-form input {
-                width: 97%;
+                width: 90%;
                 padding: 20px 10px;
             }
 
             .contact-form input[type=submit] {
-                width: 103%;
+                width: 96%;
                 margin: 20px auto;
             } 
 
@@ -1391,6 +1413,16 @@ footer {
                 margin-bottom: 20px;
             }
 
+            .flex {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+                .blog-card-landing {
+                    width: 95%;
+                    padding: 0 10px 10px;
+                }
+
             .blog-author p {
                 text-align: left;
                 margin-right: 2px;
@@ -1399,6 +1431,11 @@ footer {
                 .blog-author:last-child {
                     margin-right: 0;
                 }
+
+            .author-landing p {
+                margin-right: 20px;
+            }
+            
 
       
 
