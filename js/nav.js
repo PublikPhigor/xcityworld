@@ -57,18 +57,3 @@ const showSlide = () => {
 
 showSlide();
 
-//make the header fixed after scroll of 100px
-// const myHeader = document.querySelector('.logo-burger');
-// window.onscroll = function() {
-//     fixedHeader();
-// };
-
-// function fixedHeader() {
-//     if (document.body.scrollTop > 100) {
-//         myHeader.classList.add('fixed-header');
-//     } else {
-//         myHeader.classList.remove('fixed-header');
-//     }
-// };
-
-//the code above does not work and I don't know whyyy.

@@ -55,6 +55,7 @@ section {
     }
 
 
+
 /* global styles */
 .container {
     max-width: 90%;
@@ -341,18 +342,25 @@ header {
     padding: 1% 10px;
     text-align: center;
     box-sizing: border-box;
+    margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 20px;
+    max-width: 90%;
 }
+    /* animation on landing page */
+    .ml2 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
 
 /* landing page for work page */
 .work-land {
     color: #FFF;
     background-color: #000;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     margin-top: 20px;
-    padding: 5% 0;
+    padding: 7% 0;
 }
     .work-land-head {
         max-width: 50%;
@@ -372,7 +380,7 @@ header {
 .pages {
     display: flex;
     justify-content: space-between;
-    max-width: 98%;
+    max-width: 100%;
     margin: 10px auto;
     min-height: 300px;
     position: relative;
