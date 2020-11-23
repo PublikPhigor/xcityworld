@@ -345,7 +345,7 @@ header {
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 20px;
-    max-width: 90%;
+    max-width: 80%;
 }
     /* animation on landing page */
     .ml2 .letter {
@@ -931,8 +931,9 @@ header {
                 }
 
                 .card-img {
-                    width: 100%;
-                    margin: 5px 0;
+                    text-align: center;
+                    max-width: 215px;
+                    margin: 5px auto;
                 }
 
                 .blog-author {
@@ -1103,7 +1104,7 @@ footer {
     }
 
     .logo-burger {
-        padding: 0px 20px;
+        padding: 5px 1%;
     }
 
     .nav-logo-burger {
@@ -1188,17 +1189,17 @@ footer {
     /* landing */
     .landing {
         height: auto;
-        padding: 20px 8%;
+        padding: 20px 0%;
         align-items: center;
     }
-        .landing h1, .landing p {
-            width: 100%;
+        .landing h1 {
+            width: 75%;
         }
         .work-land-head, .work-land p {
-            max-width: 100% !important;
+            max-width: 70% !important;
         }
         .landing h1 {
-            margin: 20px 0;
+            margin: 20px auto;
         }
 
         .work-land p {
@@ -1206,8 +1207,13 @@ footer {
         }
 
         .landing p {
-            max-width: 90%;
+            max-width: 70%;
             margin: 10px auto;
+            font-size: 20px;
+        }
+
+        .letter {
+            font-size: 31px;
         }
 
     /* pages */
