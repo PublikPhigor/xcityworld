@@ -1,7 +1,9 @@
 // animation on landing page
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml2');
+var breakLine = document.querySelector('.break-line');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+breakLine.innerHTML = breakLine.textContent.replace(/\S/g, "<br><span class='letter'>$&</span>");
 
 anime.timeline({loop: true})
   .add({
