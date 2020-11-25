@@ -1136,7 +1136,7 @@ footer {
     }
 
     .logo-burger {
-        padding: 5px 1%;
+        padding: 5px 5%;
     }
 
     .nav-logo-burger {
@@ -1386,14 +1386,46 @@ footer {
         margin-bottom: 20px;
     }
 
+    .img-team-container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+        .team-name {
+            right: 5%;
+            margin-top: -75px;
+        }
+
+        .team-post {
+            right: 5%;
+            margin-top: -40px;
+        }
 
     /* popup page */
     .modal {
         width: 90%;
         height: auto !important;
         position: absolute;
-        top: 350vh;
+        top: 400vh;
     }
+        /* set different positioning for the modal popups per person */
+        .modal-absolute-1 {
+            top: 420vh;
+        }
+        .modal-absolute-2 {
+            top: 520vh;
+        }
+        .modal-absolute-3 {
+            top: 620vh;
+        }
+        .modal-absolute-4 {
+            top: 680vh;
+        }
+        .modal-absolute-5 {
+            top: 780vh;
+        }
+        .modal-absolute-6 {
+            top:  830vh;
+        }
         .slide-burger {
             left: 82%;
         }
