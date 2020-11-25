@@ -1028,7 +1028,7 @@ header {
         background-color: #000;
         color: #FFF;
         width: 100%;
-        padding: 10%;
+        padding:  10% 2%;
         padding-bottom: 0;
         margin-top: 20px;
     }
@@ -1052,6 +1052,7 @@ header {
         }
     .brief-footer {
         margin-top:  10%;
+        width: 100%;
     }
 
     .heart {
@@ -1513,7 +1514,7 @@ footer {
 
     /* 404 */
     .missing-page-container {
-        padding: 5% 10%;
+        padding: 5% 5%%;
         min-height: 100vh;
         margin-top: 0;
     }
