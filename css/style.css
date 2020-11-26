@@ -724,10 +724,11 @@ header {
         background-color: #000;
         color: #FFF;
         width: 80%;
-        height: auto;
+        height: 80vh;
         margin: 0 auto;
         border-radius: 20px;
         position: fixed;
+        overflow-y: auto;
         transform: translate(-50%, -50%) scale(0);
         top: 50%;
         left: 50%;
@@ -845,7 +846,7 @@ header {
                 width: 60%;
                 max-width: 60%;
                 margin: 0;
-                text-align: justify;
+                text-align: left;
             }
                 .slide-text p {
                     margin: 0;
@@ -1439,7 +1440,7 @@ footer {
                 width: 100%;
                 max-width: 100%;
                 margin: 10px auto;
-                max-height: 280px;
+                
             }
 
             .slide-text {
