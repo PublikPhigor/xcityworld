@@ -1239,7 +1239,7 @@ footer {
         }
 
         .landing p {
-            max-width: 70%;
+            max-width: 100%;
             margin: 10px auto;
             font-size: 20px;
         }
@@ -1403,12 +1403,12 @@ footer {
     /* popup page */
     .modal {
         width: 90%;
-        height: auto !important;
-        position: absolute;
-        top: 400vh;
+        max-height: 80vh;
+        position: fixed;
+        overflow-y: auto;
     }
         /* set different positioning for the modal popups per person */
-        .modal-absolute-1 {
+        /* .modal-absolute-1 {
             top: 420vh;
         }
         .modal-absolute-2 {
@@ -1425,7 +1425,8 @@ footer {
         }
         .modal-absolute-6 {
             top:  830vh;
-        }
+        } */
+        
         .slide-burger {
             left: 82%;
         }
