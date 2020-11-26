@@ -844,8 +844,8 @@ header {
             .slide-text {
                 width: 60%;
                 max-width: 60%;
-                text-align: justify;
                 margin: 0;
+                text-align: justify;
             }
                 .slide-text p {
                     margin: 0;
@@ -1080,7 +1080,7 @@ footer {
         }
 
         .close-margin {
-            margin-bottom: 0;
+            margin-bottom: 10px;
             margin-top: 0;
         }
         
