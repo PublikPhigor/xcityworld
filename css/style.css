@@ -175,6 +175,12 @@ header {
             justify-content: space-between;
         }
 
+        .link-head {
+            font-size: 1.7rem;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
         .small-links {
             position: relative;
             left: 50%;
@@ -418,6 +424,11 @@ header {
         .subtitle {
             color: #CCC;
             font-weight: 500;
+        }
+
+        .page-name a:hover {
+            color: #E77F11;
+            font-weight: 600;
         }
 
 
@@ -1161,6 +1172,10 @@ footer {
         align-items: flex-end;
     }
 
+    .link-head {
+        margin: 10px 0;
+    }
+
     .big-links {
         -webkit-order: 0;
         order: 0;
@@ -1224,9 +1239,12 @@ footer {
         height: auto;
         padding: 20px 0%;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 3%;
     }
         .landing h1 {
-            width: 75%;
+            width: 100%;
         }
         .work-land-head, .work-land p {
             max-width: 70% !important;
