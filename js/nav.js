@@ -194,3 +194,126 @@ const showSlides = () => {
 
 showSlides();
 
+
+
+//frames on homepage and work page
+const openFrame = () => {
+    const frame = document.querySelector('#frame');
+    const frameButton = document.querySelector('.frame-button');
+    const closeFrameButton = document.querySelector('.close-btn');
+    
+    //display frame
+    frameButton.addEventListener('click', () => {
+        frame.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton.addEventListener('click', () => {
+        frame.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame1 = () => {
+    const frame1 = document.querySelector('#frame1');
+    const frameButton1 = document.querySelector('.frame-button-1');
+    const closeFrameButton1 = document.querySelector('.close-btn-1');
+    
+    //display frame
+    frameButton1.addEventListener('click', () => {
+        frame1.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton1.addEventListener('click', () => {
+        frame1.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame2 = () => {
+    const frame2 = document.querySelector('#frame2');
+    const frameButton2 = document.querySelector('.frame-button-2');
+    const closeFrameButton2 = document.querySelector('.close-btn-2');
+    
+    //display frame
+    frameButton2.addEventListener('click', () => {
+        frame2.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton2.addEventListener('click', () => {
+        frame2.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame3 = () => {
+    const frame3 = document.querySelector('#frame3');
+    const frameButton3 = document.querySelector('.frame-button-3');
+    const closeFrameButton3 = document.querySelector('.close-btn-3');
+    
+    //display frame
+    frameButton3.addEventListener('click', () => {
+        frame3.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton3.addEventListener('click', () => {
+        frame3.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame4 = () => {
+    const frame4 = document.querySelector('#frame4');
+    const frameButton4 = document.querySelector('.frame-button-4');
+    const closeFrameButton4 = document.querySelector('.close-btn-4');
+    
+    //display frame
+    frameButton4.addEventListener('click', () => {
+        frame4.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton4.addEventListener('click', () => {
+        frame4.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame5 = () => {
+    const frame5 = document.querySelector('#frame5');
+    const frameButton5 = document.querySelector('.frame-button-5');
+    const closeFrameButton5 = document.querySelector('.close-btn-5');
+    
+    //display frame
+    frameButton5.addEventListener('click', () => {
+        frame5.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton5.addEventListener('click', () => {
+        frame5.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrames = () => {
+    openFrame();
+    openFrame1();
+    openFrame2();
+    openFrame3();
+    openFrame4();
+    openFrame5();
+    openFrame6();
+    openFrame7();
+}
+
+openFrames();

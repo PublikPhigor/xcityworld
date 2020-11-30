@@ -431,7 +431,55 @@ header {
             font-weight: 600;
         }
 
+    /* frames */
+    .frame {
+        background-color: #000;
+        color: #FFF;
+        width: 90%;
+        height: 80vh;
+        overflow-y: auto;
+        position: fixed;
+        transform: translate(-50%, -50%) scale(0);
+        top: 50%;
+        left: 50%;
+        z-index: 10000000;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+        .frame-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px 30px 0;
+            position: relative;
+            border-bottom: 1px solid #FFF;
+        }
+            .frame-burger {
+                color: #FFF;
+                font-size: 2rem;
+            }
+            .frame-head {
+                font-size: 2rem;
+                text-align: center;
+            }
 
+    /* display frames */
+    #frame.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame1.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame2.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame3.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame4.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
 /* creative expertise */
 .expertise {
     max-width: 80%;
