@@ -305,6 +305,96 @@ const openFrame5 = () => {
     });
 }
 
+const openFrame6 = () => {
+    const frame6 = document.querySelector('#frame6');
+    const frameButton6 = document.querySelector('.frame-button-6');
+    const closeFrameButton6 = document.querySelector('.close-btn-6');
+    
+    //display frame
+    frameButton6.addEventListener('click', () => {
+        frame6.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton6.addEventListener('click', () => {
+        frame6.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame7 = () => {
+    const frame7 = document.querySelector('#frame7');
+    const frameButton7 = document.querySelector('.frame-button-7');
+    const closeFrameButton7 = document.querySelector('.close-btn-7');
+    
+    //display frame
+    frameButton7.addEventListener('click', () => {
+        frame7.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton7.addEventListener('click', () => {
+        frame7.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame8 = () => {
+    const frame8 = document.querySelector('#frame8');
+    const frameButton8 = document.querySelector('.frame-button-8');
+    const closeFrameButton8 = document.querySelector('.close-btn-8');
+    
+    //display frame
+    frameButton8.addEventListener('click', () => {
+        frame8.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton8.addEventListener('click', () => {
+        frame8.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame9 = () => {
+    const frame9 = document.querySelector('#frame9');
+    const frameButton9 = document.querySelector('.frame-button-9');
+    const closeFrameButton9 = document.querySelector('.close-btn-9');
+    
+    //display frame
+    frameButton9.addEventListener('click', () => {
+        frame9.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton9.addEventListener('click', () => {
+        frame9.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
+const openFrame10 = () => {
+    const frame10 = document.querySelector('#frame10');
+    const frameButton10 = document.querySelector('.frame-button-10');
+    const closeFrameButton10 = document.querySelector('.close-btn-10');
+    
+    //display frame
+    frameButton10.addEventListener('click', () => {
+        frame10.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    //close frame
+    closeFrameButton10.addEventListener('click', () => {
+        frame10.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+}
+
 const openFrames = () => {
     openFrame();
     openFrame1();
@@ -314,6 +404,9 @@ const openFrames = () => {
     openFrame5();
     openFrame6();
     openFrame7();
+    openFrame8();
+    openFrame9();
+    openFrame10();
 }
 
 openFrames();

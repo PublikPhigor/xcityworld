@@ -432,12 +432,16 @@ header {
         }
 
     /* frames */
+    iframe {
+        width: 100%;
+        height: 80%;
+    }
+
     .frame {
         background-color: #000;
         color: #FFF;
         width: 90%;
         height: 80vh;
-        overflow-y: auto;
         position: fixed;
         transform: translate(-50%, -50%) scale(0);
         top: 50%;
@@ -464,6 +468,10 @@ header {
                 text-align: center;
             }
 
+            .frame-body {
+                height: 100%;
+            }
+
     /* display frames */
     #frame.active {
         transform: translate(-50%, -50%) scale(1);
@@ -480,6 +488,25 @@ header {
         #frame4.active {
         transform: translate(-50%, -50%) scale(1);
     }
+        #frame5.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame6.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame7.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame8.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame9.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+        #frame10.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
 /* creative expertise */
 .expertise {
     max-width: 80%;
@@ -1314,6 +1341,24 @@ footer {
         .letter {
             font-size: 31px;
         }
+
+    
+    /* frames */
+    .frame {
+        overflow-y: auto;
+    }
+
+    iframe {
+        height: 90%;
+    }
+
+    .frame-head {
+        font-size: 1rem;
+        margin: 0;
+    }
+    .frame-burger {
+        font-size: 1.5rem;
+    }
 
     /* pages */
     .pages {
