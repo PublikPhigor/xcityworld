@@ -29,10 +29,176 @@ p {
     font-size: 20px;
     font-weight: 500;
 }
+ol li {
+    list-style: upper-roman;
+}
+    .privacy-list {
+        list-style: square;
+    }
+
+    .privacy ul {
+        padding-left: 20px;
+    }
+
+button {
+    outline: none;
+    border: none;
+}
+    /* center button */
+    .btn-auto {
+        position: relative;
+        left: 45%;
+    }
+
+.p-text {
+    font-size: 20px;
+}
 
 section {
     padding: 0;
 }
+
+.line-height-1 {
+    line-height: 1.5em;
+}
+/* bootstrap classes */
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.bg-fill {
+    background-color: #E77F11;
+}
+
+.col-6 {
+    width: 50%;
+    max-width: 50%;
+}
+
+.col-4 {
+    width: 30%;
+    max-width: 30%;
+}
+
+.col-10 {
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.col-2 {
+    width: 5%;
+    max-width: 5%;
+}
+
+.col-5 {
+    width: 46%;
+    max-width: 46%;
+}
+
+.col-3 {
+    width: 23%;
+    max-width: 23%;
+}
+    /* for full 25% */
+    .col-3-full {
+        width: 25%;
+        max-width: 25%;
+    }
+
+.mt-1 {
+    margin-top: 20px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mb-2 {
+    margin-bottom: 20px !important;
+}
+
+.img-fluid {
+    width: 100% !important;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.bg-brand {
+    background-color: #ec9537;
+    color: #fff !important;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-5 {
+    padding: 50px 0 !important;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #E77F11;
+    color: #fff;
+    border-radius: 5px;
+}
+    .course-btn {
+        border-radius: 0;
+        border-bottom-left-radius: 5px !important;
+    }
+
+.container-fluid {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.container-new {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.font-2 {
+    font-size: 3rem;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+@media screen and (max-width:800px) {
+    .col-6, .col-4, .col-5, .col-10, .col-2, .col-3{
+        width: 90%;
+        max-width: 90%;
+        margin: auto;
+    }
+    .font-2 {
+        font-size: 2rem;
+    }
+    .sr-d-none {
+        display: none;
+    }
+}
+
+/* ========= */
 
 .underline {
     text-decoration: underline  ;
@@ -107,7 +273,7 @@ header {
         top: 0;
         position: fixed;
         z-index: 1000;
-        width: 90%;
+        width: 100%;
     }
         /* .fixed-header {
             position: fixed;
@@ -118,7 +284,7 @@ header {
     .nav-logo-burger {
         background: none;
         z-index: 10000;
-        padding: 20px 0 !important;
+        padding: 0 !important;
         width: 85%;
         margin: 0 auto;
     }
@@ -126,7 +292,6 @@ header {
 
     .logo img {
         height: 60px;
-        width: 60px;
     }
 
     .burger {
@@ -153,7 +318,7 @@ header {
         display: none;
         transition: transform 0s ease-in;
         color: #FFF;
-        padding: 12vh 100px;
+        padding: 15vh 100px;
         height: 100vh;
         background-color: #000;
         position: fixed;
@@ -197,7 +362,8 @@ header {
                 margin-top: 0;
             }
         .nav-footer {
-            margin-top: 15%;
+            position: relative;
+            bottom: 0;
         }
             .nav-footer a {
                 padding-right: 20px;
@@ -264,7 +430,7 @@ header {
     .toggle .line2 {
         opacity: 0;
     }
-    
+
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
         background-color: #FFF;
@@ -283,7 +449,7 @@ header {
 }
     .hello {
         max-width: 30%;
-    }    
+    }
         .hello h2 {
             margin-bottom: 5px;
         }
@@ -295,18 +461,23 @@ header {
         width: 100%;
         margin: 0 auto;
     }
-    
+
     .contact-form {
+        width: 50%;
         max-width: 50%;
         margin: 0 auto;
     }
         .contact-form input {
-            width: 95%;
+            width: 100%;
             background-color: inherit;
             padding: 40px 10px 20px 10px;
             border: none;
             outline: none;
             border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+            color: #FFF;
+            box-sizing: border-box;
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
         }
             .contact-form input::placeholder {
                 color: rgb(255, 255, 255, 0.5);
@@ -324,6 +495,9 @@ header {
             width: 100%;
             border: none;
             cursor: pointer;
+            box-sizing: border-box;
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
         }
         .contact-form input[type=submit]:hover {
             font-weight: 700;
@@ -332,7 +506,18 @@ header {
         input:focus, input:active {
             color: #FFF;
         }
-        
+
+        .select-input {
+            width: 100%;
+            margin: 5px 0;
+            outline: none;
+            border: none;
+            padding: 10px 0;
+            background-color: #000;            
+            border-bottom: 2px solid rgb(255, 255, 255, 0.5);
+            color: rgb(255, 255, 255, 0.5);
+        }
+
     /* join us page */
     .split-input {
         display: flex;
@@ -415,7 +600,7 @@ header {
         .name-left {
             margin-bottom: 0;
             text-align: left;
-            
+
         }
 
         .name-right {
@@ -507,7 +692,7 @@ header {
         #frame10.active {
         transform: translate(-50%, -50%) scale(1);
     }
-    
+
 /* creative expertise */
 .expertise {
     max-width: 80%;
@@ -564,7 +749,7 @@ header {
         align-items: center;
     }
         .creative-items i {
-            
+
         }
             .fa-arrow-down {
                 visibility: hidden;
@@ -761,7 +946,7 @@ header {
             color: #E77F11;
             box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
         }
-        
+
 
         .view-profile-box {
             text-align: center;
@@ -799,9 +984,9 @@ header {
             display: none;
         }
 
-        /* JS - to make body color change to dark or white 
+        /* JS - to make body color change to dark or white
         .dark-body {
-            background-color:rgba(0, 0, 0, .9); 
+            background-color:rgba(0, 0, 0, .9);
         }
         .white-body {
             background-color: #FFF;
@@ -835,7 +1020,7 @@ header {
         pointer-events: none;
         z-index: 10000;
     }
-    
+
     #overlay.active {
         pointer-events: all;
         opacity: 1;
@@ -951,7 +1136,7 @@ header {
         user-select: none;
         padding: 16px;
     }
-    
+
     /* Position the "next button" to the right */
     /* .next {
         left: 91%;
@@ -961,7 +1146,7 @@ header {
         .prev:hover, .next:hover {
             background-color: rgba(204, 204, 204, 0.527);
         }
-   */ 
+   */
 
 /* BLOG */
 .blog-header {
@@ -1019,7 +1204,7 @@ header {
                     color: #E77F11;
                 }
 
-            
+
             .blog-card {
                 padding: 0 10px;
                 width: 100%;
@@ -1079,7 +1264,7 @@ header {
             .main-img {
                 max-height: 350px;
             }
-            
+
             .main h2 {
                 margin: 0 auto;
             }
@@ -1146,6 +1331,181 @@ header {
     .heart {
         color: #E77F11;
     }
+
+/* ==== training page ===== */
+.mt-3 {
+    margin-top: 30px;
+}
+
+.training-header {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+    .course-card:hover {
+        border: 1px solid #E77F11;
+    }
+    .course-card img {
+        height: 150px;
+        background-position: center;
+    }
+    .card-content {
+        padding: 0 20px;
+    }
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .card-subtitle {
+        color: #aaa;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .fa.fa-clock-o {
+        color: #aaa;
+        margin-right: 10px;
+    }
+    .course-card a {
+        position: sticky;
+        bottom: 0;
+        top: 100%;
+    }
+/* ==== end ===== */
+
+/* ==== training description page ==== */
+.heading-2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+    .margin-top {
+        margin-top: 10vh;
+    }
+    .prerequisites {
+        margin: 0;
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+        .prerequisites li {
+            list-style-type: circle;
+        }
+    .no-margin {
+        margin: 0;
+    }
+    .course-outline {
+        border-bottom: 1px solid #fff;
+    }
+        .course-title {
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: #fff;
+        }
+        .course-desc {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+    .train-team {
+        text-align: center;
+    }
+        .train-team-img {
+            height: 150px;
+            width: 150px;
+            margin: 0 auto;
+            border-radius: 50%;
+            display: block;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        .train-team-name {
+            font-size: 1.5rem;
+        }
+    .payment-card {
+        padding: 20px 10px;
+        border-radius: 5px;
+        height: 250px;
+        box-sizing: border-box;
+        /* color: #000 !important; */
+    }
+        .payment-card-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .add-border {
+            border: 1px solid #E77F11;
+        }
+        .payment-card p {
+            line-height: 1.5rem;
+        }
+    .big-box {
+        height: 500px;
+        background-color: #ddd;
+        border-radius: 5px;
+        text-align: center;
+        padding: 200px 0;
+        box-shadow: 1px 1px 5px #999;
+    }
+
+    /* ==== coure registration page ==== */
+    .course-form, .course-form input {
+        display: block;
+        color: #000;
+    }
+        .course-form {
+            width: 40%;
+            margin-top: 20vh;
+        }
+            .course-form input, .course-form select {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+                .course-form input {
+                    border: 1px solid #E77F11;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+                .course-form input[type=submit] {
+                    width: 100px;
+                    margin: 10px auto;
+                    cursor: pointer;
+                }
+            .course-form select {
+                background-color: #ccc;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: 5px 0;
+            }
+
+@media screen and (max-width:800px) {
+    .order-1 {
+        order: 1;
+    }
+    .order-2 {
+        order: 2;
+    }
+    .flex-direction-column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .big-box {
+        height: 50vh;
+        padding: 15vh 0;
+    }
+    .course-form {
+        width: 90%;
+    }
+}
+/* ==== end ===== */
+
 /* footer */
 footer {
     text-align: left;
@@ -1160,7 +1520,7 @@ footer {
         justify-content: space-evenly;
     }
         .footer-card-1 {
-            line-height: 135px;
+            line-height: 120px;
         }
 
         .contact-p-head {
@@ -1171,7 +1531,7 @@ footer {
             margin-bottom: 10px;
             margin-top: 0;
         }
-        
+
         .close-margin-1 {
             margin-top: 0;
         }
@@ -1187,6 +1547,51 @@ footer {
 
             footer a:hover {
                 font-size: 25px;
+            }
+        .privacy-policy a {
+            font-size: 1.2rem;
+        }
+            @media screen and (max-width:800px) {
+                .privacy-policy a {
+                    font-size: 1rem;
+                }
+            }
+        
+        .social-links {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            visibility: hidden;
+            z-index: 9999;
+            width: 50%;
+        }
+            .social-link {
+                text-align: center;
+                padding: 5px;
+            }
+                .social-link .fa {
+                    font-size: 1rem;
+                }
+            .p-0 {
+                padding: 0 !important;
+            }
+            .bg-fb {
+                background-color: #3b5998;
+            }
+            .bg-twitter {
+                background-color: #1da1f2;
+            }
+
+            .bg-ig {
+                background: #f09433; 
+                background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+            }
+
+            .bg-green {
+                background-color: #25D366;
             }
 
 
@@ -1205,19 +1610,19 @@ footer {
     h1 {
         font-size: 35px;
     }
-    
+
     h2 {
         font-size: 30px;
     }
-    
+
     h3 {
         font-size: 20px;
     }
-    
+
     h4 {
         font-size: 20px;
     }
-    
+
     /* navigation */
     header {
         margin-bottom: 5vh;
@@ -1237,6 +1642,7 @@ footer {
         padding: 15vh 5%;
         min-height: 100vh;
         height: auto;
+        overflow-y: scroll;
     }
 
     .contact-nav {
@@ -1257,11 +1663,10 @@ footer {
     .big-links {
         -webkit-order: 0;
         order: 0;
-        margin-bottom: 20px;
     }
         .big-links li {
-            margin-bottom: 5px;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+            margin: 0 !important;
         }
 
     .small-links {
@@ -1271,7 +1676,7 @@ footer {
         left: 0;
     }
         .small-links li {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
     .logo-burger-pad {
@@ -1279,7 +1684,8 @@ footer {
     }
 
     .nav-footer {
-        margin-top: 10%;
+        position: relative;
+        bottom: 0;
     }
 
     /* contact navigation page */
@@ -1292,20 +1698,19 @@ footer {
         }
 
         .contact-form {
-            max-width: 100%;   
+            width: 90%;
+            max-width: 100%;
         }
             form {
-                max-width: 90%;
+                max-width: 100%;
             }
             .contact-form input {
-                width: 90%;
                 padding: 20px 10px;
             }
 
             .contact-form input[type=submit] {
-                width: 96%;
                 margin: 20px auto;
-            } 
+            }
 
     /* join us page */
     .split-input {
@@ -1324,6 +1729,7 @@ footer {
         width: 100%;
         max-width: 100%;
         padding: 20px 3%;
+        margin-bottom: 0;
     }
         .landing h1 {
             width: 100%;
@@ -1349,7 +1755,7 @@ footer {
             font-size: 31px;
         }
 
-    
+
     /* frames */
     .frame {
         overflow-y: auto;
@@ -1545,7 +1951,7 @@ footer {
         .modal-absolute-6 {
             top:  830vh;
         } */
-        
+
         .slide-burger {
             left: 82%;
         }
@@ -1558,7 +1964,7 @@ footer {
                 width: 100%;
                 max-width: 100%;
                 margin: 10px auto;
-                
+
             }
 
             .slide-text {
@@ -1633,9 +2039,9 @@ footer {
             .author-landing p {
                 margin-right: 20px;
             }
-            
 
-      
+
+
 
         .main {
             -webkit-order: 0;
@@ -1666,7 +2072,7 @@ footer {
 
     /* 404 */
     .missing-page-container {
-        padding: 5% 5%%;
+        padding: 5% 5%;
         min-height: 100vh;
         margin-top: 0;
     }
@@ -1681,6 +2087,15 @@ footer {
     .footer-card-1 {
         line-height: normal;
         margin: 20px 0;
+        display: none;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        visibility: visible;
     }
 
 }

@@ -201,11 +201,13 @@ const openFrame = () => {
     const frame = document.querySelector('#frame');
     const frameButton = document.querySelector('.frame-button');
     const closeFrameButton = document.querySelector('.close-btn');
+    const frameLink = document.querySelector('.frame-link');
     
     //display frame
     frameButton.addEventListener('click', () => {
         frame.classList.add('active');
         overlay.classList.add('active');
+        frameLink.innerHTML = "<iframe src=\"https://www.befittinglife.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -219,11 +221,13 @@ const openFrame1 = () => {
     const frame1 = document.querySelector('#frame1');
     const frameButton1 = document.querySelector('.frame-button-1');
     const closeFrameButton1 = document.querySelector('.close-btn-1');
+    const frameLink1 = document.querySelector('.frame-link-1');
     
     //display frame
     frameButton1.addEventListener('click', () => {
         frame1.classList.add('active');
         overlay.classList.add('active');
+        frameLink1.innerHTML = "<iframe src=\"https://www.teapotng.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -237,11 +241,13 @@ const openFrame2 = () => {
     const frame2 = document.querySelector('#frame2');
     const frameButton2 = document.querySelector('.frame-button-2');
     const closeFrameButton2 = document.querySelector('.close-btn-2');
+    const frameLink2 = document.querySelector('.frame-link-2');
     
     //display frame
     frameButton2.addEventListener('click', () => {
         frame2.classList.add('active');
         overlay.classList.add('active');
+        frameLink2.innerHTML = "<iframe src=\"https://princessjanet.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -255,11 +261,13 @@ const openFrame3 = () => {
     const frame3 = document.querySelector('#frame3');
     const frameButton3 = document.querySelector('.frame-button-3');
     const closeFrameButton3 = document.querySelector('.close-btn-3');
+    const frameLink3 = document.querySelector('.frame-link-3');
     
     //display frame
     frameButton3.addEventListener('click', () => {
         frame3.classList.add('active');
         overlay.classList.add('active');
+        frameLink3.innerHTML = "<iframe src=\"https://www.hooptelecoms.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -273,11 +281,13 @@ const openFrame4 = () => {
     const frame4 = document.querySelector('#frame4');
     const frameButton4 = document.querySelector('.frame-button-4');
     const closeFrameButton4 = document.querySelector('.close-btn-4');
+    const frameLink4 = document.querySelector('.frame-link-4');
     
     //display frame
     frameButton4.addEventListener('click', () => {
         frame4.classList.add('active');
         overlay.classList.add('active');
+        frameLink4.innerHTML = "<iframe src=\"https://www.naijatestcrowd.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -291,11 +301,13 @@ const openFrame5 = () => {
     const frame5 = document.querySelector('#frame5');
     const frameButton5 = document.querySelector('.frame-button-5');
     const closeFrameButton5 = document.querySelector('.close-btn-5');
+    const frameLink5 = document.querySelector('.frame-link-5');
     
     //display frame
     frameButton5.addEventListener('click', () => {
         frame5.classList.add('active');
         overlay.classList.add('active');
+        frameLink5.innerHTML = "<iframe src=\"https://www.yinkaogunnubi.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -309,11 +321,13 @@ const openFrame6 = () => {
     const frame6 = document.querySelector('#frame6');
     const frameButton6 = document.querySelector('.frame-button-6');
     const closeFrameButton6 = document.querySelector('.close-btn-6');
+    const frameLink6 = document.querySelector('.frame-link-6');
     
     //display frame
     frameButton6.addEventListener('click', () => {
         frame6.classList.add('active');
         overlay.classList.add('active');
+        frameLink6.innerHTML = "<iframe src=\"https://www.iamonenigerian.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -327,11 +341,13 @@ const openFrame7 = () => {
     const frame7 = document.querySelector('#frame7');
     const frameButton7 = document.querySelector('.frame-button-7');
     const closeFrameButton7 = document.querySelector('.close-btn-7');
+    const frameLink7 = document.querySelector('.frame-link-7');
     
     //display frame
     frameButton7.addEventListener('click', () => {
         frame7.classList.add('active');
         overlay.classList.add('active');
+        frameLink7.innerHTML = "<iframe src=\"https://www.qmdci.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -345,11 +361,13 @@ const openFrame8 = () => {
     const frame8 = document.querySelector('#frame8');
     const frameButton8 = document.querySelector('.frame-button-8');
     const closeFrameButton8 = document.querySelector('.close-btn-8');
+    const frameLink8 = document.querySelector('.frame-link-8');
     
     //display frame
     frameButton8.addEventListener('click', () => {
         frame8.classList.add('active');
         overlay.classList.add('active');
+        frameLink8.innerHTML = "<iframe src=\"https://www.acuspare.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -363,11 +381,13 @@ const openFrame9 = () => {
     const frame9 = document.querySelector('#frame9');
     const frameButton9 = document.querySelector('.frame-button-9');
     const closeFrameButton9 = document.querySelector('.close-btn-9');
+    const frameLink9 = document.querySelector('.frame-link-9');
     
     //display frame
     frameButton9.addEventListener('click', () => {
         frame9.classList.add('active');
         overlay.classList.add('active');
+        frameLink9.innerHTML = "<iframe src=\"https://www.naijatestcrowd.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
@@ -381,11 +401,13 @@ const openFrame10 = () => {
     const frame10 = document.querySelector('#frame10');
     const frameButton10 = document.querySelector('.frame-button-10');
     const closeFrameButton10 = document.querySelector('.close-btn-10');
+    const frameLink10 = document.querySelector('.frame-link-10');
     
     //display frame
     frameButton10.addEventListener('click', () => {
         frame10.classList.add('active');
         overlay.classList.add('active');
+        frameLink10.innerHTML = "<iframe src=\"https://www.befittinglife.com\" frameborder=\"0\"></iframe>";
     });
 
     //close frame
