@@ -80,8 +80,8 @@ section {
 }
 
 .col-6 {
-    width: 50%;
-    max-width: 50%;
+    width: 48%;
+    max-width: 48%;
 }
 
 .col-4 {
@@ -1664,6 +1664,14 @@ header {
         height: 450px;
         max-width: 550px;
     }
+    .services-side-img {
+        height: 450px;
+        max-height: auto;
+        max-width: 550px;
+    }
+    .side-img-1 {
+        background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610117364/Adwords-services_hznwvt.jpg");
+    }
     .align-items-center {
         align-items: center !important;
     }
@@ -1687,7 +1695,7 @@ header {
         .normal-landing-font {
             font-size: 1rem;
         }
-        .bg-conversation {
+        .bg-conversation, .services-side-img {
             height: 200px;
         }
     }
