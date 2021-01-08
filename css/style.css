@@ -1371,7 +1371,7 @@ header {
 .course-card {
     border: 1px solid #ddd;
     border-radius: 5px;
-    height: 450px;
+    height: 550px;
     overflow: hidden;
     margin-top: 20px;
 }
@@ -1379,7 +1379,7 @@ header {
         border: 1px solid #E77F11;
     }
     .course-card img {
-        height: 150px;
+        height: 250px;
         background-position: center;
     }
     .card-content {
@@ -1662,18 +1662,27 @@ header {
     .bg-conversation {
         background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610114788/Our-cro-experts-cropped_smvwem.jpg");
         height: 450px;
-        max-width: 550px;
+        max-width: 95%;
     }
     .services-side-img {
-        height: 450px;
+        height: 500px;
+        width: 95%;
         max-height: auto;
-        max-width: 550px;
     }
     .side-img-1 {
         background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610117364/Adwords-services_hznwvt.jpg");
     }
+    .side-img-2 {
+        background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610118098/Marketing-automation-consultants2_w9g1f4.jpg");
+    }
+    .side-img-3 {
+        background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610139393/SEO-experts2_gzjl44.jpg");
+    }
     .align-items-center {
         align-items: center !important;
+    }
+    .align-items-start {
+        align-items: flex-start !important;
     }
 
     @media screen and (max-width:800px) {
