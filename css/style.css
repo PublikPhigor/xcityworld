@@ -8,6 +8,13 @@ body {
     overflow-x: hidden;
 }
 
+/* clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%, 0% 0%);
+transition: clip-path 300ms; */
+
+.btn-styled:hover {
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%, 0% 0%);
+}
+
 h1 {
     font-size: 72px;
 }
@@ -98,6 +105,12 @@ section {
     max-width: 46%;
 }
 
+.col-8 {
+    width: 70%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 .col-3 {
     width: 23%;
     max-width: 23%;
@@ -184,8 +197,21 @@ section {
     width: 100%;
 }
 
+.d-inline, .fa-check {
+    display: inline !important;
+}
+
+.fa-check {
+    margin-right: 10px;
+}
+
+.bg-grey {
+    color: #ccc;
+}
+
+
 @media screen and (max-width:800px) {
-    .col-6, .col-4, .col-5, .col-10, .col-2, .col-3{
+    .col-6, .col-4, .col-5, .col-10, .col-2, .col-3, .col-8{
         width: 90%;
         max-width: 90%;
         margin: auto;
@@ -356,10 +382,10 @@ header {
         .big-links {
             font-size: 2.5rem;
             text-align: right;
+            margin: 0;
         }
             .big-links li, .small-links li {
-                margin-bottom: 10px;
-                margin-top: 0;
+                margin: 0;
             }
         .nav-footer {
             position: relative;
@@ -1490,6 +1516,17 @@ header {
         .normal-font {
             font-size: 2rem;
         }
+        .normal-heading-font {
+            font-size: 3.5rem;
+        }
+        @media screen and (max-width:800px) {
+            .normal-font {
+                font-size: 1.5rem;
+            }
+            .normal-heading-font {
+                font-size: 2.5rem;
+            }
+        }
         .color-brand {
             color: #E77F11;
         }
@@ -1559,6 +1596,103 @@ header {
     }
 }
 /* ==== end ===== */
+
+/* ==== services page ==== */
+.services-landing {
+    text-align: center;
+    height: 400px;
+    background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610107599/customer-care_ykt2z2.jpg");
+    color: #FFF;
+    box-sizing: border-box;
+    padding: 0;
+}
+    .services-landing h2 {
+        color: #FFF;
+    }
+    .bg-gradient-overlay {
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, .9), #e78011de);
+        height: 100%;
+        width: 100%;
+    }
+        .padding-8 {
+            padding: 8% 0;
+        }
+        .padding-5 {
+            padding: 5% 0;
+        }
+        .padding-2 {
+            padding: 2% 0;
+        }
+    .services-text {
+        margin: 5px 0;
+    }
+    .services-header {
+        margin: 0;
+    }
+    .services-img {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+.services-pre-footer {
+    color: #FFF;
+    height: 400px;
+    text-align: center;
+    background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610107497/group-shot_drbctq.jpg");
+}
+    .services-pre-footer h2 {
+        color: #FFF;
+    }
+.services-cta {
+    height: 150px;
+    color: #FFF;
+}
+    .services-cta h2 {
+        color: #FFF;
+        margin: 0;
+    }
+    .brand-color {
+        color: #E77F11;
+    }
+    .services-card-img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+    .bg-conversation {
+        background-image: url("https://res.cloudinary.com/xcityworld/image/upload/v1610114788/Our-cro-experts-cropped_smvwem.jpg");
+        height: 450px;
+        max-width: 550px;
+    }
+    .align-items-center {
+        align-items: center !important;
+    }
+
+    @media screen and (max-width:800px) {
+        .services-landing {
+            height: 300px;
+        }
+        .padding-8 {
+            padding: 20% 0;
+        }
+        .padding-5 {
+            padding: 10% 0;
+        }
+        .services-landing h2 {
+            font-size: 1.5rem;
+        }
+        .services-pre-footer h2 {
+            font-size: 1.2rem;
+        }
+        .normal-landing-font {
+            font-size: 1rem;
+        }
+        .bg-conversation {
+            height: 200px;
+        }
+    }
+
+/* ==== end ==== */
 
 /* footer */
 footer {
